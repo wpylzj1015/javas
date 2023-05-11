@@ -1,7 +1,7 @@
 public class array {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        初始化静态数组
-        int[] array = new int[]{1,3,4};
+        int[] array = new int[]{1, 3, 4};
         System.out.println(array);
 
 //        初始化动态数组
@@ -11,12 +11,11 @@ public class array {
         }
 
 
-        int[] zhandou = new int[]{33,5,22,44,55};
+        int[] zhandou = new int[]{33, 5, 22, 44, 55};
         for (int i = 0; i < zhandou.length; i++) {
-            if(zhandou[0] < zhandou[i]) zhandou[0] = zhandou[i+1];
-
+            if (zhandou[0] > zhandou[i]) zhandou[0] = zhandou[i];
         }
-        System.out.println("最大战力是:"+zhandou[0]);
+        System.out.println("最小战力是:" + zhandou[0]);
     }
 
 }
